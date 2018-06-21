@@ -1,0 +1,159 @@
+/************************************************************
+
+Theme name : Digital Elite
+Description: Web dev challenges layout by thecodingsultan
+Author: Genevieve Masioni
+Author URI : http://genevievemasioni.com
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Version: 1.0
+Tags: static site
+
+**************************************************************
+
+Table of Contents:
+
+  0. GLOBAL
+  1. HEADER
+  2. MAIN
+  3. FOOTER
+
+**************************************************************/
+
+
+/************************************************
+0.	GLOBAL
+************************************************/
+
+@import url("../fonts/Avenir Roman.otf");
+
+:root {
+  --base-font-size: 16px;
+  --base-font-family: "Avenir Roman", sans-serif;
+  --base-padding: 1rem;
+  --base-color: #fff;
+  --grey-color: #30343F;
+  --pinkred-color: #DB5461;
+}
+
+html, body {
+  font-size: var(--base-font-size);
+}
+
+body {
+  font-family: var(--base-font-family);
+  margin: 0;
+  color: var(--grey-color);
+  overflow: hidden;
+}
+
+/************************************************
+1.	HEADER
+************************************************/
+
+header {
+  text-align: center;
+  background: var(--base-color);
+  box-shadow: 0 1px 2px rgba(0,0,0,.16), 0 1px 2px rgba(0,0,0,.23);
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  padding: 0 1rem;
+  top: 5rem;
+  right: 2rem;
+}
+
+.primary_menu {
+  list-style: none;
+  padding: 0;
+}
+
+.primary_menu li {
+  display: inline;
+  margin: .5rem;
+}
+
+/************************************************
+2.	MAIN
+************************************************/
+
+main {
+  color: var(--base-color);
+  text-transform: uppercase;
+  height: 40rem;
+  background: var(--pinkred-color) url("../images/background_header.jpg")
+  195% 50%/contain no-repeat fixed;
+}
+
+.hero_section {
+  width: 49.7%;
+  height: 100%;
+  display: flex;
+  background: var(--pinkred-color);
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  padding-left: 5rem;
+}
+
+.hero_section::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 100%;
+  border-bottom: 640px solid var(--pinkred-color);
+  border-right: 48px solid transparent;
+}
+
+.hero_section h1 {
+  width: 100%;
+  line-height: 1.6;
+}
+
+.text_highlight {
+  color: var(--grey-color);
+}
+
+.more_btn {
+  border: .2rem solid var(--grey-color);
+  border-radius: 2rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,.16), 0 1px 2px rgba(0,0,0,.23);
+  padding: .5rem;
+  width: 10rem;
+  font-size: 1rem;
+}
+
+/************************************************
+3.	FOOTER
+************************************************/
+
+footer, .widget {
+  display: flex;
+}
+
+footer {
+  background: var(--grey-color);
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+.widget, .widget_icon {
+  margin: var(--base-padding);
+}
+
+.widget {
+  justify-content: space-around;
+}
+
+.widget_icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.widget_content_number {
+  color: var(--base-color);
+}
+
+.widget_content_text {
+  color: rgb(156, 158, 163);
+}
