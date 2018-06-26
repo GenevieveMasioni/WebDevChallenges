@@ -1,0 +1,57 @@
+/************************************************************
+
+Theme name : Smart SEO
+Description: web dev challenges by @thecodingsultan
+Author: Genevieve Masioni
+Author URI : http://genevievemasioni.com
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Version: 1.0
+Tags: static site, html, css
+
+**************************************************************
+
+Table of Contents:
+
+  1. MEDIA QUERY < 1034px
+  2. MEDIA QUERY < 925px
+
+**************************************************************/
+
+
+/************************************************
+1.	MEDIA QUERY < 1034px
+************************************************/
+
+@media only screen and (max-width: 1034px) {
+  .primary_menu {
+    display: none;
+  }
+
+  .scd_menu {
+    display: inline-block;
+  }
+
+  .site_logo {
+    width: 15%;
+  }
+}
+
+/************************************************
+2.	MEDIA QUERY < 925px
+************************************************/
+
+@media only screen and (max-width: 925px) {
+  .conversion {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .site_logo {
+    width: 20%;
+  }
+
+  .carousel_wrapper {
+    width: 85%;
+  }
+}
