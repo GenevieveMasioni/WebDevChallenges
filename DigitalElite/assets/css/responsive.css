@@ -1,0 +1,89 @@
+/************************************************************
+
+Theme name : Digital Elite
+Description: Web dev challenges layout by thecodingsultan
+Author: Genevieve Masioni
+Author URI : http://genevievemasioni.com
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Version: 1.0
+Tags: static site
+
+**************************************************************
+
+Table of Contents:
+
+  1. MEDIA QUERY < 1050px
+  2. MEDIA QUERY < 910px
+
+**************************************************************/
+
+
+/************************************************
+1.	MEDIA QUERY < 1075px
+************************************************/
+
+@media only screen and (max-width: 1050px) {
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    top: auto;
+    right: auto;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  .primary_menu li {
+    margin: 1rem;
+  }
+}
+
+/************************************************
+2.	MEDIA QUERY < 910px
+************************************************/
+
+@media only screen and (max-width: 910px) {
+  main {
+    background-color: var(--pinkred-color);
+    background-image: none;
+  }
+
+  .hero_section {
+    width: 100%;
+  }
+/*
+  body {
+    overflow: hidden scroll;
+  }
+
+  footer {
+    flex-wrap: wrap;
+  }
+
+  .widget {
+    flex: 15rem 1 1;
+    justify-content: flex-start;
+  } */
+}
+
+/************************************************
+2.	MEDIA QUERY < 664px
+************************************************/
+
+@media only screen and (max-width: 664px) {
+
+  body {
+    overflow: hidden scroll;
+  }
+
+  footer {
+    flex-wrap: wrap;
+  }
+
+  .widget {
+    flex: 15rem 1 1;
+    justify-content: flex-start;
+  }
+}

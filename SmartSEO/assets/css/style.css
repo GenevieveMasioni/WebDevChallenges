@@ -1,0 +1,287 @@
+/************************************************************
+
+Theme name : Smart SEO
+Description: web dev challenges by @thecodingsultan
+Author: Genevieve Masioni
+Author URI : http://genevievemasioni.com
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Version: 1.0
+Tags: static site, html, css
+
+**************************************************************
+
+Table of Contents:
+
+  0. GLOBAL
+  1. HEADER
+  2. MENU
+  3. MAIN
+  4. HERO SECTION
+  5. CONTENT
+  6. CAROUSEL
+  7. TESTIMONIAL
+  8. FOOTER
+
+**************************************************************/
+
+
+/************************************************
+0.	GLOBAL
+************************************************/
+
+:root {
+  --base-font-size: 16px;
+  --base-font-family: "Open Sans", sans-serif;
+  --base-padding: 1rem;
+  --large-padding: 10%;
+  --base-font-color: rgb(63, 63, 63);
+  --light-grey: rgb(236, 236,	236);
+  --footer-grey: rgb(224, 221, 221);
+  --light-orange: rgb(245,	210,	112);
+  --orange: rgb(207,	104,	49);
+  --light-blue: rgb(32,	87,	146);
+  --blue: rgb(37,	73, 145);
+
+}
+
+html, body {
+  font-size: var(--base-font-size);
+}
+
+body {
+  font-family: var(--base-font-family);
+  color: var(--base-font-color);
+  margin: 0;
+  overflow-x: hidden;
+}
+
+header, main, .conversion, .offers,
+.offers_head, .carousel_wrapper,
+.carousel_nav, .testimonial, .author {
+  display: flex;
+}
+
+header, .conversion {
+  justify-content: space-between;
+}
+
+header, .hero_section, .offers_head,
+.carousel_wrapper, .author {
+  align-items: center;
+}
+
+main, .offers, .carousel_wrapper {
+  flex-wrap: wrap;
+}
+
+header, .hero_section, .btn {
+  color: #fff;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.subtitle {
+  text-transform: none;
+  font-weight: normal;
+}
+
+.subtitle, .slogan {
+  margin: .5rem 0;
+}
+
+.btn {
+  width: 10rem;
+  padding: var(--base-padding);
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  border-radius: 3rem;
+  box-shadow: 0 0 .1rem var(--base-font-color);
+  background: linear-gradient(to left, var(--orange), var(--light-orange));
+}
+
+/************************************************
+1.	HEADER
+************************************************/
+
+header {
+  background: transparent;
+  position: fixed;
+  border-bottom: .05rem solid var(--light-grey);
+  padding: var(--base-padding) var(--large-padding);
+}
+
+.site_logo {
+  width: 10%;
+}
+
+/************************************************
+2.	MENU
+************************************************/
+
+.primary_menu {
+  padding: 0;
+  list-style: none;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.primary_menu li {
+  display: inline;
+  margin: 0 var(--base-padding);
+}
+
+.scd_menu {
+  display: none;
+}
+
+/************************************************
+3.	MAIN
+************************************************/
+
+main > * {
+  width: 100%;
+  padding: 0 var(--large-padding);
+}
+
+/************************************************
+4.	HERO SECTION
+************************************************/
+
+.hero_section {
+  height: 30rem;
+  background: url("../images/Background image_edited.png") center/cover no-repeat;
+  display: flex;
+  padding-left: var(--large-padding);
+}
+
+/************************************************
+5.	CONVERSION
+************************************************/
+
+.conversion {
+  background: var(--light-grey);
+  padding: var(--base-padding) 15%;
+  text-align: center;
+}
+
+/************************************************
+5.	CONTENT
+************************************************/
+
+.content {
+  padding: 3% var(--large-padding);
+  text-align: center;
+}
+
+.content > * {
+  margin-bottom: var(--large-padding);
+}
+
+.offers, .offers_head {
+  justify-content: center;
+}
+
+.offer {
+  margin: var(--base-padding);
+  width: 15rem;
+  text-align: center;
+}
+
+.offers_head img {
+  height: 2rem;
+  margin-right: var(--base-padding);
+}
+
+/************************************************
+6. CAROUSEL
+************************************************/
+
+.carousel_wrapper {
+  width: 45%;
+  height: 20rem;
+  box-shadow: 0 0 .5rem var(--footer-grey);
+  margin: 0 auto;
+  padding: var(--base-padding) 5%;
+  border-radius: var(--base-padding);
+}
+
+.carousel_wrapper > * {
+  width: 100%;
+}
+
+.carousel_nav {
+  margin-top: 5%;
+  justify-content: center;
+}
+
+.carousel_nav > * {
+  background: var(--footer-grey);
+  border-radius: 50%;
+  width: var(--base-padding);
+  height: var(--base-padding);
+  margin: 0 .3rem;
+}
+
+.carousel_nav .current_panel {
+  background: var(--base-font-color);
+}
+
+/************************************************
+7. TESTIMONIAL
+************************************************/
+
+.title.headline {
+  font-weight: normal;
+  margin: 0;
+}
+
+.testimonial .quotation {
+  margin-right: var(--base-padding);
+  height: 2rem;
+}
+
+.testimonial p {
+  margin: 0;
+  text-align: left;
+}
+
+.author_photo {
+  border-radius: 45%;
+  box-shadow: 0 0 .5rem var(--footer-grey);
+  width: 3rem;
+  height: 3rem;
+  margin-right: var(--base-padding);
+  filter: grayscale(100%);
+}
+
+.author {
+  margin-left: var(--large-padding);
+}
+
+.author_name, .author_job {
+  margin: .2rem 0;
+}
+
+.author_name {
+  font-weight: bold;
+}
+
+.author_job {
+  color: var(--footer-grey);
+}
+
+/************************************************
+8.	FOOTER
+************************************************/
+
+footer {
+  background: var(--footer-grey);
+  padding: var(--base-padding) var(--large-padding);
+  text-align: center;
+}
