@@ -26,8 +26,5 @@
   "bugs": {
     "url": "https://github.com/genevievemasioni/webdevchallenges/issues"
   },
-  "homepage": "https://github.com/genevievemasioni/webdevchallenges#readme",
-  "dependencies": {
-    "hoek": "^5.0.3"
-  }
+  "homepage": "https://github.com/genevievemasioni/webdevchallenges#readme"
 }
