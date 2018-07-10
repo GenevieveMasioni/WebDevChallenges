@@ -1,0 +1,27 @@
+
+@media only screen and (max-width: 934px) {
+
+  .headline.md {
+    font-size: 3rem;
+  }
+
+  .content {
+    .segments {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+  }
+
+  .specialization {
+  .services {
+    @include flex-v-center;
+    .service {
+      margin-right: $base-margin;
+    }
+  }
+}
+
+  .interior {
+    display: none;
+  }
+}

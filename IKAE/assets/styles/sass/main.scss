@@ -1,11 +1,16 @@
 // Mixins, functions, and variables
 @import "helpers/variables";
 @import "helpers/mixins";
-@import "helpers/functions";
 
 // Components
 @import "components/menu";
 @import "components/cover";
+
+// Responsive
+@import "responsive/lg";
+@import "responsive/md";
+@import "responsive/sm";
+@import "responsive/xs";
 
 // ************************************************************
 //
@@ -37,7 +42,7 @@ body {
 
 .headline {
   text-transform: uppercase;
-  font-size: $title-size-large;
+  font-size: 7rem;
 }
 
 // ************************************************************
@@ -49,9 +54,9 @@ body {
   justify-content: space-between;
   background-color: transparent;
   position: absolute;
-  width: 85%;
+  width: 100%;
   box-sizing: border-box;
-  margin: $md-margin $md-margin $md-margin $lg-margin;
+  padding: $md-margin;
   .site-logo {
     height: $base-margin;
   }
@@ -93,7 +98,7 @@ body {
 }
 }
 
-.services {
+.service {
   text-transform: uppercase;
   img {
     height: $base-margin;
