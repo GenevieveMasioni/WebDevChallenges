@@ -133,14 +133,6 @@ body {
   }
 }
 
-// @for $i from 1 to 4 {
-//   .categories {
-//     .segments:nth-child(#{$i}) {
-//       background-color: $base-color;
-//     }
-//   }
-// }
-
 .bathroom_category {
   @include photo-content('bathroom');
 }
