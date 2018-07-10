@@ -1,7 +1,7 @@
 
 @mixin photo-content($file) {
-  content: url(/assets/media/images/#{$file}.jpg);
-  object-fit: cover;
+  background: url('/IKAE/assets/media/images/#{$file}.jpg') center;
+  background-size: cover;
 }
 
 @mixin flex {
@@ -14,4 +14,8 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+@mixin title {
+  font-weight: bold;
 }

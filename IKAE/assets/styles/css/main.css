@@ -5,7 +5,7 @@
     margin: 0 1rem; }
     .menu li a {
       text-decoration: none;
-      color: #f3f3f3; }
+      color: #acacac; }
       .menu li a:hover {
         color: #4a4a4a; }
 
@@ -16,16 +16,35 @@
   padding: 0;
   margin: 0; }
 
+.cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("/IKAE/assets/media/images/header.jpg") center;
+  background-size: cover; }
+
 html, body {
   font-size: 16px; }
 
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  color: #4a4a4a;
+  margin: 0; }
+
+.title {
+  font-weight: bold; }
+
+.headline {
+  text-transform: uppercase;
+  font-size: 4rem; }
 
 .site_header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
   margin: 2rem 2rem 2rem 4rem; }
   .site_header .site-logo {
     height: 2rem; }

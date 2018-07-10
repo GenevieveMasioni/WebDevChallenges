@@ -5,6 +5,7 @@
 
 // Components
 @import "components/menu";
+@import "components/cover";
 
 // ************************************************************
 //
@@ -22,11 +23,25 @@ html, body {
 
 body {
   font-family: $base-font-family;
+  color: $base-color;
+  margin: 0;
+}
+
+.title {
+  @include title;
+}
+
+.headline {
+  text-transform: uppercase;
+  font-size: $title-size-large;
 }
 
 .site_header {
   @include flex;
   justify-content: space-between;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
   margin: $md-margin $md-margin $md-margin $lg-margin;
   .site-logo {
     height: $md-margin;
