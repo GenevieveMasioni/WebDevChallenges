@@ -1,6 +1,6 @@
 
 @mixin photo-content($file) {
-  background: url('/IKAE/assets/media/images/#{$file}.jpg') center;
+  background: url('/IKAE/assets/media/images/#{$file}.jpg') center no-repeat;
   background-size: cover;
 }
 

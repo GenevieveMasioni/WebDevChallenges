@@ -109,11 +109,65 @@ body {
 
 .categories {
   .content_head {
-    padding: $md-margin $lg-margin;
+    padding: $base-margin $lg-margin;
     background-color: rgb(255,255,255);
   }
+}
+
+.category {
+  height: 35rem;
+  text-align: center;
+  width: 100%;
+  @include flex-vh-center;
+  background-blend-mode: overlay;
+  .title {
+    text-transform: uppercase;
+    color: $accent-color;
+  }
+  &:hover {
+    background-blend-mode: normal;
+    transition: .7s;
+    .title {
+      display: none;
+    }
+  }
+}
+
+// @for $i from 1 to 4 {
+//   .categories {
+//     .segments:nth-child(#{$i}) {
+//       background-color: $base-color;
+//     }
+//   }
+// }
+
+.bathroom_category {
+  @include photo-content('bathroom');
+}
+
+.kitchen_category {
+  @include photo-content('kitchen');
+}
+
+.bedroom_category {
+  @include photo-content('bedroom');
+}
+
+.livingroom_category {
+  @include photo-content('livingroom');
+}
+
+.bathroom_category, .kitchen_category,
+.bedroom_category, .livingroom_category {
+  background-color: $base-color;
 }
 
 // ************************************************************
 // FOOTER
 // ************************************************************
+
+footer {
+  text-align: center;
+  color: $accent-darker-color;
+  margin: $base-margin;
+}

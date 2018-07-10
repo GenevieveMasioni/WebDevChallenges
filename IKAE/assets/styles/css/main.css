@@ -20,7 +20,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("/IKAE/assets/media/images/header.jpg") center;
+  background: url("/IKAE/assets/media/images/header.jpg") center no-repeat;
   background-size: cover; }
 
 html, body {
@@ -82,5 +82,47 @@ body {
     width: 100%; }
 
 .categories .content_head {
-  padding: 4rem 7rem;
+  padding: 2rem 7rem;
   background-color: white; }
+
+.category {
+  height: 35rem;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-blend-mode: overlay; }
+  .category .title {
+    text-transform: uppercase;
+    color: #f3f3f3; }
+  .category:hover {
+    background-blend-mode: normal;
+    transition: .7s; }
+    .category:hover .title {
+      display: none; }
+
+.bathroom_category {
+  background: url("/IKAE/assets/media/images/bathroom.jpg") center no-repeat;
+  background-size: cover; }
+
+.kitchen_category {
+  background: url("/IKAE/assets/media/images/kitchen.jpg") center no-repeat;
+  background-size: cover; }
+
+.bedroom_category {
+  background: url("/IKAE/assets/media/images/bedroom.jpg") center no-repeat;
+  background-size: cover; }
+
+.livingroom_category {
+  background: url("/IKAE/assets/media/images/livingroom.jpg") center no-repeat;
+  background-size: cover; }
+
+.bathroom_category, .kitchen_category,
+.bedroom_category, .livingroom_category {
+  background-color: #4a4a4a; }
+
+footer {
+  text-align: center;
+  color: #acacac;
+  margin: 2rem; }
