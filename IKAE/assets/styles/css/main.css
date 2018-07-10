@@ -2,7 +2,7 @@
   text-transform: uppercase;
   font-weight: bold; }
   .menu li {
-    margin: 0 1rem; }
+    margin: 0 2rem; }
     .menu li a {
       text-decoration: none;
       color: #acacac; }
@@ -44,13 +44,43 @@ body {
   justify-content: space-between;
   background-color: transparent;
   position: absolute;
-  width: 100%;
-  margin: 2rem 2rem 2rem 4rem; }
+  width: 85%;
+  box-sizing: border-box;
+  margin: 4rem 4rem 4rem 7rem; }
   .site_header .site-logo {
     height: 2rem; }
   .site_header .search {
     height: 1rem; }
 
 .navbar {
+  display: flex; }
+
+.content .segments {
   display: flex;
-  align-items: center; }
+  justify-content: space-between; }
+  .content .segments .segment {
+    margin-right: 4rem;
+    flex: 1; }
+    .content .segments .segment h3 {
+      color: #acacac;
+      margin-top: 0; }
+
+.about {
+  padding: 4rem 7rem;
+  background-color: #dedede; }
+  .about .segments:first-child {
+    flex-basis: 10%; }
+
+.services {
+  text-transform: uppercase; }
+  .services img {
+    height: 2rem; }
+
+.interior {
+  width: 60%; }
+  .interior img {
+    width: 100%; }
+
+.categories .content_head {
+  padding: 4rem 7rem;
+  background-color: white; }

@@ -15,7 +15,11 @@
 // License URI: http://www.gnu.org/licenses/gpl-2.0.html
 // Version: 1.0.0
 //
-// **************************************************************
+// ************************************************************
+
+// ************************************************************
+// GLOBAL
+// ************************************************************
 
 html, body {
   font-size: $base-font-size;
@@ -36,21 +40,80 @@ body {
   font-size: $title-size-large;
 }
 
+// ************************************************************
+// HEADER
+// ************************************************************
+
 .site_header {
-  @include flex;
+  @include flex-v-center;
   justify-content: space-between;
   background-color: transparent;
   position: absolute;
-  width: 100%;
+  width: 85%;
+  box-sizing: border-box;
   margin: $md-margin $md-margin $md-margin $lg-margin;
   .site-logo {
-    height: $md-margin;
+    height: $base-margin;
   }
   .search {
-    height: $base-margin;
+    height: $base-padding;
   }
 }
 
 .navbar {
   @include flex;
 }
+
+// ************************************************************
+// MAIN
+// ************************************************************
+
+.content {
+  .segments {
+    @include flex;
+    justify-content: space-between;
+    .segment {
+      margin-right: $md-margin;
+      flex: 1;
+      h3 {
+      color: $accent-darker-color;
+      margin-top: 0;
+      }
+    }
+  }
+}
+
+.about {
+  padding: $md-margin $lg-margin;
+  background-color: rgb(222,222,222);
+  .segments {
+    &:first-child {
+      flex-basis: 10%;
+  }
+}
+}
+
+.services {
+  text-transform: uppercase;
+  img {
+    height: $base-margin;
+  }
+}
+
+.interior {
+  width: 60%;
+  img {
+    width: 100%;
+  }
+}
+
+.categories {
+  .content_head {
+    padding: $md-margin $lg-margin;
+    background-color: rgb(255,255,255);
+  }
+}
+
+// ************************************************************
+// FOOTER
+// ************************************************************

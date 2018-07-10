@@ -6,11 +6,25 @@
 
 @mixin flex {
   display: flex;
+}
+
+@mixin flex-v-center {
+  @include flex;
   align-items: center;
 }
 
-@mixin horizontal-menu {
+@mixin flex-h-center {
   @include flex;
+  justify-content: center;
+}
+
+@mixin flex-vh-center {
+  @include flex-v-center;
+  justify-content: center;
+}
+
+@mixin horizontal-menu {
+  @include flex-v-center;
   list-style-type: none;
   padding: 0;
   margin: 0;

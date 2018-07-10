@@ -1,6 +1,6 @@
 
 .cover {
-  @include flex;
+  @include flex-v-center;
   justify-content: center;
   @include photo-content('header');
 }
