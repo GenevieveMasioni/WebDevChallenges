@@ -1,0 +1,17 @@
+
+@mixin photo-content($file) {
+  content: url(/assets/media/images/#{$file}.jpg);
+  object-fit: cover;
+}
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+
+@mixin horizontal-menu {
+  @include flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}

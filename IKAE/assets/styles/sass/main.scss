@@ -1,9 +1,10 @@
 // Mixins, functions, and variables
-@import "helpers/variables"
-@import "helpers/mixins"
-@import "helpers/functions"
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
 
-
+// Components
+@import "components/menu";
 
 // ************************************************************
 //
@@ -11,6 +12,30 @@
 // Author URI : http://genevievemasioni.com
 // License: GNU General Public License v2 or later
 // License URI: http://www.gnu.org/licenses/gpl-2.0.html
-// Version: 1.0
+// Version: 1.0.0
 //
 // **************************************************************
+
+html, body {
+  font-size: $base-font-size;
+}
+
+body {
+  font-family: $base-font-family;
+}
+
+.site_header {
+  @include flex;
+  justify-content: space-between;
+  margin: $md-margin $md-margin $md-margin $lg-margin;
+  .site-logo {
+    height: $md-margin;
+  }
+  .search {
+    height: $base-margin;
+  }
+}
+
+.navbar {
+  @include flex;
+}

@@ -1,0 +1,19 @@
+
+.menu {
+  text-transform: uppercase;
+  font-weight: bold;
+  li {
+    margin: 0 $base-margin;
+    a {
+      text-decoration: none;
+      color: $accent-color;
+      &:hover {
+        color: $base-color;
+      }
+    }
+  }
+}
+
+.h_menu {
+  @include horizontal-menu;
+}
